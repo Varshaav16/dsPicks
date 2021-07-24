@@ -26,7 +26,7 @@ do
     then
         echo ".........."
         cat ./pseudo-codes/${codes[$comm]}
-        echo $'\nPress \e[1;31m[exit] \e[0m to exit'
+        echo ".........."
     elif [ $comm == "back" ]
     then
         exec ./help.sh
