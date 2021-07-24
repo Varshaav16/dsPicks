@@ -17,8 +17,9 @@ while [ $comm != "exit" ]
 do
     if [ -v codes[$comm] ]
     then
-        echo "true"
-        echo $'Press \e[1;31m[exit] \e[0m to exit'
+        echo ".........."
+        cat ./pseudo-codes/${codes[$comm]}
+        echo $'\nPress \e[1;31m[exit] \e[0m to exit'
     else
         echo "Command not found. Try again"
     fi
