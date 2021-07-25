@@ -3,7 +3,7 @@ read -a comm
 if [ ${comm[0]} == "verify" ]
 then
     test_file="test_${comm[1]}"
-    python3 $test_file > output.txt 2>&1
+    python3 ./tests/$test_file > output.txt 2>&1
     res=$(head -c 1 output.txt)
     if [ $res == '.' ]
     then
