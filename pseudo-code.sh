@@ -26,7 +26,7 @@ do
     then
         echo ".........."
         cat ./pseudo-codes/${codes[$comm]}
-        echo ".........."
+        echo $'\n..........'
     elif [ $comm == "back" ]
     then
         exec ./help.sh
