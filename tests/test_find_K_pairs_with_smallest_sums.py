@@ -1,4 +1,5 @@
-import find_K_pairs_with_smallest_sums, unittest
+from .. import find_K_pairs_with_smallest_sums
+import unittest
 
 class TestSolution(unittest.TestCase):
 

@@ -12,3 +12,4 @@ echo $'\nPress \e[1;31m[Ctrl+C] \e[0m to exit'
 read comm
 #python3 ./scrape.py $comm  will have to fix scrape.py
 echo $'\n\e[1;33m Will fix this pretty soon! \e[0m'
+./help.sh

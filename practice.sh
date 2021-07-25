@@ -7,20 +7,23 @@ problems=( ["1"]="\e[1;31mFind K Pairs with Smallest Sums \e[0m \nYou are given 
 
 echo $'\nPress \e[1;31msearch\e[0m to find the problem statement.'
 
-read comm
+read -a comm
 
-while [ $comm != "exit" ]
+while [ $comm[0] != "exit" ]
 do
     echo $'\nPress \e[1;31ma number between 1-2\e[0m to find the problem statement. Press \e[1;31m[back] \e[0m to go back. Press \e[1;31m[Ctrl + C] \e[0m to exit the script.'
-    read comm
+    read -a comm
 
-    if [ -v problems[$comm] ]
+    if [ -v problems[${comm[0]}] ]
     then
         echo ".........."
-        echo -e ${problems[$comm]}
-    elif [ $comm == "back" ]
+        echo -e ${problems[${comm[0]}]}
+    elif [ ${comm[0]} == "back" ]
     then 
         ./help.sh
+    elif [ ${comm[0]} == "verify" ]
+    then 
+        ./verify.sh ${comm[1]}
     else
         echo "Problem number not found try again. Try again"
     fi
