@@ -1,4 +1,5 @@
-Traceback (most recent call last):
-  File "./tests/test_find_K_pairs_with_smallest_sums.py", line 1, in <module>
-    from .. import find_K_pairs_with_smallest_sums
-ImportError: attempted relative import with no known parent package
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
