@@ -2,6 +2,7 @@ import os
 import pdfkit
 
 path_toModule = "C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe"
+
 config = pdfkit.configuration(wkhtmltopdf=path_toModule) 
 #options = {'allow': 'D:/MY_FILES/hacky-mlh-project/scrapers/pythonScraper/test.py'}
 
