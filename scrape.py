@@ -8,4 +8,4 @@ def scrape(dataStructure):
 
     pdfkit.from_url('https://en.wikipedia.org/wiki/'+dataStructure, r'.\exports\out.pdf', configuration=config)
 
-scrape(sys.argv[0])
+scrape(sys.argv[1])
