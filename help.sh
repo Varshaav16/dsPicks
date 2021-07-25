@@ -13,7 +13,7 @@ read comm
 
 if [ $comm == "study" ]
 then
-    ./study.sh
+    ./scrape.sh
 elif [ $comm == "pseudo-code" ]
 then
     ./pseudo-code.sh
