@@ -11,7 +11,7 @@ read comm
 
 while [ $comm != "exit" ]
 do
-    echo $'\nPress \e[1;31ma number between 1-2\e[0m to find the problem statement. Press \e[1;31m[back] \e[0m to go back. Press \e[1;31m[exit] \e[0m to exit the script.'
+    echo $'\nPress \e[1;31ma number between 1-2\e[0m to find the problem statement. Press \e[1;31m[back] \e[0m to go back. Press \e[1;31m[Ctrl + C] \e[0m to exit the script.'
     read comm
 
     if [ -v problems[$comm] ]
