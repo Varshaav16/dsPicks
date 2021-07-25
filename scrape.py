@@ -1,16 +1,11 @@
 import os
 import pdfkit
+import sys
 
-path_toModule = "C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe"
-config = pdfkit.configuration(wkhtmltopdf=path_toModule) 
-#options = {'allow': 'D:/MY_FILES/hacky-mlh-project/scrapers/pythonScraper/test.py'}
+def scrape(dataStructure):
+    path_toModule = "C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe"
+    config = pdfkit.configuration(wkhtmltopdf=path_toModule) 
 
-pdfkit.from_url('https://en.wikipedia.org/wiki/Machine_learning', r'.\exports\out.pdf', configuration=config)
+    pdfkit.from_url('https://en.wikipedia.org/wiki/'+dataStructure, r'.\exports\out.pdf', configuration=config)
 
-path = 'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
-  
-# Check whether the specified
-# path exists or not
-isExist = os.path.exists(path)
-print(isExist)
-#/mnt/d/MY_FILES/hacky-mlh-project/scrapers/pythonScraper
+scrape(sys.argv[0])
